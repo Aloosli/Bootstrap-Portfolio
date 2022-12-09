@@ -1,0 +1,59 @@
+
+body {
+  /*background-image: url("https://images.unsplash.com/photo-1519681393784-d120267933ba?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80");
+  */
+  background-image: url("/images/2182.jpg");
+  background-position: center; 
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.menu-bar {
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(5px);
+ 
+  border-bottom: 1px solid rgba(255,255,255,0.3);
+}
+
+.navbar-nav {
+  text-align: right;
+  margin-right: 20px;
+
+}
+.menu-bar .navbar-toggler {
+  padding-right: 20px;
+  outline: none!important;
+  border: none!important;
+}
+#logo {
+  max-height: 100px;
+}
+
+.jumbotron-container {
+  width: auto;
+  
+}
+.jumbotron {
+  margin: 5rem;
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(5px);
+ 
+  border: 1px solid rgba(255,255,255,0.3);
+}
+.jumbo-pic {
+  width: 20rem;
+  border-radius: 25px;
+  transform: scaleX(-1);
+}
+section {
+  display: flex;
+  justify-content: center;
+}
+.projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+ 
+}
