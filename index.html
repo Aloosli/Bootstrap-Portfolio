@@ -28,61 +28,68 @@
     <title>Adrian Loosli</title>
   </head>
   <body>
-    <header>
+    <div class="menu-bar">
+      <nav class="navbar navbar-expand-lg shadow ">
+        <a class="navbar-brand ml-5" href="#"
+          ><img class="logo" src="./images/adi-logo-white.png" alt="logo"
+        /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span style="color: white">
+            <i
+              class="fa-solid fa-bars-staggered fa-2xl fa-flip"
+              style="--fa-animation-duration: 3s"
+            ></i>
+          </span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a
+                class="nav-link font-weight-bold btn-header px-4"
+                href="#about"
+                >About</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link font-weight-bold btn-header px-4"
+                href="#projects"
+                >Projects</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link font-weight-bold btn-header px-4 mr-5"
+                href="#skills"
+                >Skills</a
+              >
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+    <main>
+      
       <!--Start of Nav/Hero section-->
       <div class="jumbotron jumbotron-fluid pt-0">
-        <div class="menu-bar">
-          <nav class="navbar navbar-expand-lg shadow fixed-top">
-            <a class="navbar-brand ml-5" href="#"
-              ><img class="logo" src="./images/adi-logo-white.png" alt="logo"
-            /></a>
-            <button
-              class="navbar-toggler"
-              type="button"
-              data-toggle="collapse"
-              data-target="#navbarNav"
-              aria-controls="navbarNav"
-              aria-expanded="false"
-              aria-label="Toggle navigation"
-            >
-              <span style="color: white">
-                <i
-                  class="fa-solid fa-bars-staggered fa-2xl fa-flip"
-                  style="--fa-animation-duration: 3s"
-                ></i>
-              </span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                  <a
-                    class="nav-link font-weight-bold btn-header px-4"
-                    href="#about"
-                    >About</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a
-                    class="nav-link font-weight-bold btn-header px-4"
-                    href="#projects"
-                    >Projects</a
-                  >
-                </li>
-                <li class="nav-item">
-                  <a
-                    class="nav-link font-weight-bold btn-header px-4 mr-5"
-                    href="#skills"
-                    >Skills</a
-                  >
-                </li>
-              </ul>
-            </div>
-          </nav>
-        </div>
-        <!--end of Nav/Hero section-->
+        
+        <!--end of Nav section-->
+        <!---Hero Scetion-->
         <div class="hero row">
           <div class="col-md-6 d-flex justify-content-center">
-            <img class=" figure m-3 img-fluid" src="./images/jumbo-pic.jpg" alt="Adrian Loosli's avatar">
+            <img
+              class="figure m-3 img-fluid"
+              src="./images/jumbo-pic.jpg"
+              alt="Adrian Loosli's avatar"
+            />
           </div>
 
           <div class="col-md-6 container info text-center d-flex flex-column">
@@ -99,12 +106,13 @@
           </div>
         </div>
       </div>
-    </header>
+    </main>
+    <!--end of Hero section-->
     <section class="about-me">
       <div class="row container-fluid d-flex justify-content-center">
         <div class="col md-6 container about text-center p-4 m-4">
-          <h2 class="display-4 mb-4" >About Me</h2>
-            <a class="about-anchor" id="about"></a>
+          <h2 class="display-4 mb-4">About Me</h2>
+          <a class="about-anchor" id="about"></a>
           <p class="text-left">
             I am 46, live in Brighton and have recently decided to learn
             Front-end web development.<br />I'm currently enrolled in a 4 month
@@ -121,7 +129,9 @@
     <!---Projects section-->
     <section>
       <div class="row">
-        <div class="project-container col-sm-12 m-3 container d-flex flex-column">
+        <div
+          class="project-container col-sm-12 m-3 container d-flex flex-column"
+        >
           <h2 class="text-center p-4 display-4 projects-title">Projects</h2>
           <a class="project-anchor" id="projects"></a>
         </div>
@@ -138,7 +148,9 @@
                 A fictional travel agency's website. I followed a paid tutorial
                 by Dev Ed
               </p>
-              <a href="https://aloosli.github.io/travelly/" class="btn">Take me there</a>
+              <a href="https://aloosli.github.io/travelly/" class="btn"
+                >Take me there</a
+              >
             </div>
           </div>
         </div>
@@ -151,7 +163,9 @@
                 This is the result of a tutorial by Dev Ed, a website for
                 fictional photographer.
               </p>
-              <a href="https://aloosli.github.io/elena-joy/#about" class="btn">Take me there</a>
+              <a href="https://aloosli.github.io/elena-joy/#about" class="btn"
+                >Take me there</a
+              >
             </div>
           </div>
         </div>
@@ -165,7 +179,11 @@
                 bootcamp.
               </p>
               <div class="text-center">
-                <a href="https://aloosli.github.io/responsive-portfolio-challenge/" class="btn">Take me there</a>
+                <a
+                  href="https://aloosli.github.io/responsive-portfolio-challenge/"
+                  class="btn"
+                  >Take me there</a
+                >
               </div>
             </div>
           </div>
@@ -179,7 +197,11 @@
                 We had to refactor the code in this challenge in week two .
               </p>
               <div class="text-center">
-                <a href="https://aloosli.github.io/horiseon-mock-up/" class="btn mt-4">Take me there</a>
+                <a
+                  href="https://aloosli.github.io/horiseon-mock-up/"
+                  class="btn mt-4"
+                  >Take me there</a
+                >
               </div>
             </div>
           </div>
@@ -201,19 +223,19 @@
 
           <div class="row text-center">
             <div class="col-sm mb-5">
-              <h3 class="m-2 text-white display-5 mb-5">HTML</h3>
+              <h3 class="m-2  display-5 mb-5">HTML</h3>
               <img class="mb-5" src="./images/brand-html5.svg" alt="" />
             </div>
             <div class="col-sm">
-              <h3 class="m-2 text-white display-5 mb-5">CSS</h3>
+              <h3 class="m-2  display-5 mb-5">CSS</h3>
               <img class="mb-5" src="./images/brand-css3.svg" alt="" />
             </div>
             <div class="col-sm">
-              <h3 class="m-2 text-white display-5 mb-5">JAVASCRIPT</h3>
+              <h3 class="m-2  display-5 mb-5">JAVASCRIPT</h3>
               <img class="mb-5" src="./images/brand-javascript.svg" alt="" />
             </div>
             <div class="col-sm">
-              <h3 class="m-2 text-white display-5 mb-5">REACT</h3>
+              <h3 class="m-2  display-5 mb-5">REACT</h3>
               <img class="mb-5" src="./images/brand-react-native.svg" alt="" />
             </div>
           </div>
