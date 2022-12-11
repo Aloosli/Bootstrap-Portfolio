@@ -4,164 +4,257 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lemon&family=Poppins:wght@300;400;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <!---Bootstrap CSS-->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
       integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="./css/style.css" />
+    <!--FontAwesome-->
     <script
       src="https://kit.fontawesome.com/920fe9cae1.js"
       crossorigin="anonymous"
     ></script>
-    
-
-    <title>Adi's Portfolio</title>
+    <!--CSS Styles-->
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Adrian Loosli</title>
   </head>
-
   <body>
-    <div class="header">
-      <div class="menu-bar ">
-        <nav class="navbar navbar-expand-lg ">
-          <a class="navbar-brand " href="#"
-            ><img id="logo" src="./images/adi-logo-white.png" alt="logo"
-          /></a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-toggle="collapse"
-            data-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span style="color: white">
-              <i
-                class="fa-solid fa-bars-staggered fa-2xl fa-flip"
-                style="--fa-animation-duration: 3s"
-              ></i>
-            </span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ml-auto ">
-              <li class="nav-item">
-                <a class="nav-link text-white ml-4 " href="#">About</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link text-white ml-4" href="#">Projects</a>
-              </li>
-              <li class="nav-item ">
-                <a class="nav-link text-white ml-4 " href="#">Contact</a>
-              </li>
-            </ul>
-          </div>
-        </nav>
-      </div>
-    </div>
-    <!--Hero-->
-    <div class="jumbotron-container">
-      <div class="jumbotron">
-        <div class="container">
-          <div class="row">
-            <div class="col-sm lg-6">
-              <img class="jumbo-pic"src="./images/jumbo-pic.JPG" alt="">
+    <header>
+      <!--Start of Nav/Hero section-->
+      <div class="jumbotron jumbotron-fluid pt-0">
+        <div class="menu-bar">
+          <nav class="navbar navbar-expand-lg shadow fixed-top">
+            <a class="navbar-brand ml-5" href="#"
+              ><img class="logo" src="./images/adi-logo-white.png" alt="logo"
+            /></a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarNav"
+              aria-controls="navbarNav"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span style="color: white">
+                <i
+                  class="fa-solid fa-bars-staggered fa-2xl fa-flip"
+                  style="--fa-animation-duration: 3s"
+                ></i>
+              </span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                  <a
+                    class="nav-link font-weight-bold btn-header px-4"
+                    href="#about"
+                    >About</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link font-weight-bold btn-header px-4"
+                    href="#projects"
+                    >Projects</a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a
+                    class="nav-link font-weight-bold btn-header px-4 mr-5"
+                    href="#skills"
+                    >Skills</a
+                  >
+                </li>
+              </ul>
             </div>
-            <div class="col-sm lg-6">
-              <div class="info">
-                <h1 class="display-3 text-white display-7">Hello! </h1>
-                <h2 class="lead display-4">I am Adrian Loosli, a Web Development Student</h2>
-              </div>
-            </div>
+          </nav>
+        </div>
+        <!--end of Nav/Hero section-->
+        <div class="hero row">
+          <div class="col-md-6 d-flex justify-content-center">
+            <img class=" figure m-3 img-fluid"src=./images/jumbo-pic.jpg
+            alt="Adrian Loosli's avatar">
           </div>
-         
-          
 
-          
-        
-        </div>
-    </div>
-    <!--End of Hero-->
-    
-  
-    </div>
-    <!--Projects-->
-    <section class="work">
-      <div class="container projects">
-        <!--Title-->
-        <div class="row">
-          <div class="col-sm-12">
-            
-            <h2 class="text-center m-5 text-white display-2">Projects</h2>
-          </div>
-          <!--End of Title-->
-        </div>
-        <div class="row container-fluid mb-5">
-          <div class="col-md-4 mb-3 mb-md-0">
-            <div class="card" style="width: 18rem;">
-              <img src="./images/travelly.png" class="card-img-top" alt="...">
-              <div class="card-body text-center">
-                <h5 class="card-title text-center">Travelly</h5>
-                <p class="card-text">A fictional travel agency's website. I followed a paid tutorial by Dev Ed</p>
-                <a href="#" class="btn btn-primary ">Go somewhere</a>
-              </div>
+          <div class="col-md-6 container info text-center d-flex flex-column">
+            <h1 class="display-4 p-4">Adrian Loosli</h1>
+            <div class="container">
+              <img
+                class="icon"
+                src="./images/curly-brackets-svgrepo-com(1).svg"
+                alt=""
+              />
             </div>
+
+            <h2 class="p-4">Web Developer</h2>
           </div>
-          <div class="col-md-4 mb-3 mb-md-0">
-            <div class="card" style="width: 18rem;">
-              <img src="./images/elena.png" class="card-img-top" alt="...">
-              <div class="card-body text-center">
-                <h5 class="card-title text-center">Elena Joy</h5>
-                <p class="card-text">This is the result of a tutorial by Dev Ed, a website for fictional photographer Elena Joy.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-4 mb-3 mb-md-0">
-            <div class="card" style="width: 18rem;">
-              <img src="./images/portfolio.png" class="card-img-top" alt="...">
-              <div class="card-body text-center">
-                <h5 class="card-title text-center">Portfolio</h5>
-                <p class="card-text">This was our week 2 project,<br>my first portfolio in this bootcamp.</p>
-                <a href="#" class="btn btn-primary">Go somewhere</a>
-              </div>
-            </div>
-          </div>
-         
         </div>
       </div>
-      <!--End of Projects-->
-      
-    
-    </section>
-    <!--Skills-->
-    <section class="bg-light p-5">
-      <div class="container">
-        <!--Ttile-->
-        <div class="row">
-          <div class="col">
-            <h1 class="display-2">Skills</h1>
-            <p class="lead text-secondary">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Debitis, molestiae!</p>
-          </div>
+    </header>
+    <section class="about-me">
+      <div class="row container-fluid d-flex justify-content-center">
+        <div class="col md-6 container about text-center p-4 m-4">
+          <h2 class="display-4 mb-4" >About Me</h2>
+            <a class="about-anchor" id="about"></a>
+          <p class="text-left">
+            I am 46, live in Brighton and have recently decided to learn
+            Front-end web development.<br />I'm currently enrolled in a 4 month
+            bootcamp and am enjoy it alot. So far we have covered HTML,CSS and
+            Javascript. I am eager to deepen my knowledge of them all.
+          </p>
         </div>
-        <!--end of Title-->
+        <div class="col-md-6 container contact-me text-center p-4 m-4">
+          <h2 class="display-4">Contact Me</h2>
+          <p class="mt-4 lead">lizzwizz@tuta.io</p>
+        </div>
       </div>
     </section>
-    <!--End of Skills-->
+    <!---Projects section-->
+    <section>
+      <div class="row">
+        <div class="project-container col-sm-12 m-3 container d-flex flex-column">
+          <h2 class="text-center p-4 display-4 projects-title">Projects</h2>
+          <a class="project-anchor" id="projects"></a>
+        </div>
+      </div>
+      <!--End of Title-->
+
+      <div class="row container-fluid mb-5">
+        <div class="col-md-6 mb-3 col-lg-3 d-flex justify-content-center">
+          <div class="card" style="width: 18rem">
+            <img src="./images/travelly.png" class="card-img-top" alt="..." />
+            <div class="card-body text-center">
+              <h5 class="card-title text-center">Travelly</h5>
+              <p class="card-text">
+                A fictional travel agency's website. I followed a paid tutorial
+                by Dev Ed
+              </p>
+              <a href="https://aloosli.github.io/travelly/" class="btn">Take me there</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 mb-3 col-lg-3 d-flex justify-content-center">
+          <div class="card" style="width: 18rem">
+            <img src="./images/elena.png" class="card-img-top" alt="..." />
+            <div class="card-body text-center">
+              <h5 class="card-title text-center">Elena Joy</h5>
+              <p class="card-text">
+                This is the result of a tutorial by Dev Ed, a website for
+                fictional photographer.
+              </p>
+              <a href="https://aloosli.github.io/elena-joy/#about" class="btn">Take me there</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 mb-3 d-flex justify-content-center">
+          <div class="card" style="width: 18rem">
+            <img src="./images/portfolio.png" class="card-img-top" alt="..." />
+            <div class="card-body d-flex flex-column justify-center">
+              <h5 class="card-title text-center">Portfolio</h5>
+              <p class="card-text text-center">
+                This was our week 2 project,<br />my first portfolio in this
+                bootcamp.
+              </p>
+              <div class="text-center">
+                <a href="https://aloosli.github.io/responsive-portfolio-challenge/" class="btn">Take me there</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 mb-3 d-flex justify-content-center">
+          <div class="card" style="width: 18rem">
+            <img src="./images/horiseon.png" class="card-img-top" alt="..." />
+            <div class="card-body d-flex flex-column justify-center">
+              <h5 class="card-title text-center">Horiseon</h5>
+              <p class="card-text text-center">
+                We had to refactor the code in this challenge in week two .
+              </p>
+              <div class="text-center">
+                <a href="#" class="btn mt-4">Take me there</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!---end of Projects section-->
+    <!--Start  of skills section-->
+    <section id="skills">
+      <div class="col-md skills mb-6">
+        <div class="container skills-section">
+          <!--Ttile-->
+          <div class="row">
+            <div class="col mb-5">
+              <h2 class="display-2 text-center p-5">Skills</h2>
+              <!--end of Title-->
+            </div>
+          </div>
+
+          <div class="row text-center">
+            <div class="col-sm mb-5">
+              <h3 class="m-2 text-white display-5 mb-5">HTML</h3>
+              <img class="mb-5" src="./images/brand-html5.svg" alt="" />
+            </div>
+            <div class="col-sm">
+              <h3 class="m-2 text-white display-5 mb-5">CSS</h3>
+              <img class="mb-5" src="./images/brand-css3.svg" alt="" />
+            </div>
+            <div class="col-sm">
+              <h3 class="m-2 text-white display-5 mb-5">JAVASCRIPT</h3>
+              <img class="mb-5" src="./images/brand-javascript.svg" alt="" />
+            </div>
+            <div class="col-sm">
+              <h3 class="m-2 text-white display-5 mb-5">REACT</h3>
+              <img class="mb-5" src="./images/brand-react-native.svg" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--end of skills section-->
+    <!--Footer/Socials section-->
+    <footer class="footer padding">
+      <div class="container text-center">
+        <a class="btn btn-social" href="https://www.twitter.com/lizzwizzie"
+          ><i class="fa-brands fa-twitter"></i
+        ></a>
+        <a
+          class="btn btn-social"
+          href="https://www.linkedin.com/in/adi-loosli-8b24ba87/"
+          ><i class="fa-brands fa-linkedin-in"></i
+        ></a>
+        <a class="btn btn-social" href="https://www.github.com/Aloosli"
+          ><i class="fa-brands fa-github"></i
+        ></a>
+      </div>
+    </footer>
+    <!--endf of Footer/Socials section-->
+
+    <!--Bootstrap scripts-->
     <script
-    src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
-    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-    crossorigin="anonymous"
-  ></script>
-  <script
-    src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
-    integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
-    crossorigin="anonymous"
-  ></script>
-  <script
-    src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
-    integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
-    crossorigin="anonymous"
-  ></script>  
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+      integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
