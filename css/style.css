@@ -18,15 +18,8 @@ h5 {
   font-weight: 600;
   color: #f4a261;
 }
-/* Nav and hero section*/
-/*
-.menu-bar {
-  position: sticky;
-  top: 0;
-  z-index: 1;
-}
-*/
 
+/* Navbar selectors */
 .navbar {
   
   background-color: #e76f51;
@@ -202,8 +195,4 @@ footer {
   transform: scaleX(1.5) scaleY(1.6);
   opacity: 0;
 }
-@media only screen and (max-width: 600px) {
-  .menu-bar {
-    position: static;
-  }
-}
+

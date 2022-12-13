@@ -2,7 +2,7 @@
 
 ## Description
 
-Our task was to create a portfolio website using Bootstrap 4. It contains the few projects we did so far in this bootcamp and<br>some tutorial projects i did by Dev Ed.
+Our task was to create a portfolio website using Bootstrap 4. It contains the few projects we did so far in this bootcamp and some tutorial projects i did by Dev Ed.
 
 ## Screenshot
 ![](images/bootstrap-portfolio.png)
